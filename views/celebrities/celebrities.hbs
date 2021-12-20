@@ -1,8 +1,10 @@
-<div>
-    <h2>Celebritries</h2>
+<h2>Celebrities</h2>
+<div class="list">
     {{#each celebrities}}
-    <h3>{{name}}</h3>
-    <h3>{{occupation}}</h3>
-    <h3>{{catchPhrase}}</h3>
+    <div class="celebrities">
+    <h3>Name:{{name}}</h3>
+    <h3>Occupation:{{occupation}}</h3>
+    <h3>CatchPrhase:{{catchPhrase}}</h3>
+    </div>
     {{/each}}
 </div>

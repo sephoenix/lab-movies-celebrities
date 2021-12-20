@@ -1,4 +1,3 @@
-const e = require('express');
 const express = require('express');
 const router = express.Router();
 const Celebrity = require('../models/Celebrity.model')
@@ -27,7 +26,6 @@ router.get('/celebrities',  (req, res, next)=>{
     .then((celebrities)=>{
         res.render('celebrities/celebrities', {celebrities})
     })
-    .catch(e)
 })
 
 module.exports = router;
